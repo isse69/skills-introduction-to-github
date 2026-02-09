@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style3.css" />
+  <title>Smart Innovation Tech - Portfolio</title>
+</head>
+
+<body>
+  <!-- Top anchor for clickable logo -->
+  <div id="top"></div>
+
+  <div class="container">
+
+    <header class="header">
+      <nav class="navbar" id="demoNavbar">
+        <!-- Clickable Logo (ONE time only) -->
+        <div class="logo">
+          <a href="#top" class="logo-link">
+            <img src="assets/logo.png" alt="Web Developer Logo" />
+            <span>Smart Innovation Tech</span>
+          </a>
+        </div>
+
+        <!-- Right actions -->
+        <div class="nav-actions">
+          <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+
+          <button class="hamburger" id="demoHamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+        <ul class="nav-links" id="demoNavLinks">
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#plan">Plan</a></li>
+          <li><a href="#projects-table">Table</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Optional hero logo -->
+      <img src="assets/logo.png" alt="Web Developer Logo" class="hero-logo" />
+
+      <h1 id="demoTitle">I am a developer</h1>
+      <p id="demoSubtitle">Welcome to Smart Innovation Tech portfolio page.</p>
+    </header>
+
+    <main>
+      <!-- Skills -->
+      <section id="skills" class="section fade">
+        <h2>My Skills</h2>
+        <div class="cards">
+          <div class="card"><h3>HTML5</h3><p>Structure & semantic tags</p><span class="tag">HTML</span></div>
+          <div class="card"><h3>CSS3</h3><p>Styling, layout & responsive</p><span class="tag">CSS</span></div>
+          <div class="card"><h3>Bootstrap</h3><p>Fast UI components</p><span class="tag">Bootstrap</span></div>
+          <div class="card"><h3>JavaScript</h3><p>DOM & basic interactivity</p><span class="tag">JavaScript</span></div>
+        </div>
+      </section>
+
+      <!-- Projects (CLICKABLE MODAL CARDS) -->
+      <section id="projects" class="section fade">
+        <h2>My Projects</h2>
+
+        <div class="cards">
+          <div class="card project-card"
+               data-title="Project A"
+               data-description="A web application for task management."
+               data-tech="HTML, CSS, JavaScript"
+               data-link="https://github.com/isse69">
+            <h3>Project A</h3>
+            <p>A web application for task management.</p>
+            <span class="tag">HTML • CSS • JavaScript</span>
+
+            <div class="project-links">
+              <a href="https://github.com/isse69" target="_blank">GitHub</a>
+              <a href="#" target="_blank">Live Demo</a>
+            </div>
+          </div>
+
+          <div class="card project-card"
+               data-title="Project B"
+               data-description="A mobile app for fitness tracking."
+               data-tech="React Native, Firebase"
+               data-link="https://github.com/isse69">
+            <h3>Project B</h3>
+            <p>A mobile app for fitness tracking.</p>
+            <span class="tag">React Native • Firebase</span>
+
+            <div class="project-links">
+              <a href="https://github.com/isse69" target="_blank">GitHub</a>
+              <a href="#" target="_blank">Live Demo</a>
+            </div>
+          </div>
+
+          <div class="card project-card"
+               data-title="Project C"
+               data-description="To-Do App (coming soon)."
+               data-tech="HTML, CSS, JavaScript"
+               data-link="https://github.com/isse69">
+            <h3>Project C</h3>
+            <p>To-Do App</p>
+            <span class="tag">Coming soon</span>
+
+            <div class="project-links">
+              <a href="https://github.com/isse69" target="_blank">GitHub</a>
+              <a href="#" target="_blank">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Plan -->
+      <section id="plan" class="section fade">
+        <h2>My Portfolio Building Plan</h2>
+        <ol class="plan-list">
+          <li>Design a clean and modern layout.</li>
+          <li>Showcase my projects with screenshots and descriptions.</li>
+          <li>Include a contact form for potential clients.</li>
+          <li>HTML is a structural markup language.</li>
+          <li>CSS is used for styling and layout.</li>
+          <li>JavaScript adds interactivity to web pages.</li>
+          <li>Bootstrap is a popular CSS framework.</li>
+        </ol>
+      </section>
+
+      <!-- Projects Table -->
+      <section id="projects-table" class="section fade">
+        <h2>Projects Table</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Technologies Used</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Project A</td><td>Task management web app.</td><td>HTML, CSS, JavaScript</td><td>Completed</td></tr>
+              <tr><td>Project B</td><td>Fitness tracking app.</td><td>React Native, Firebase</td><td>In Progress</td></tr>
+              <tr><td>Project C</td><td>To-Do App</td><td>HTML, CSS, JavaScript</td><td>Coming soon</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about-me" class="section fade">
+        <h2>About Me</h2>
+        <h3>Osman Isse – Junior Web Developer</h3>
+        <p>This is the about me section.</p>
+
+        <div class="cv-links">
+          <a href="assets/Osman-Isse-CV.pdf" download class="btn-cv">Download CV</a>
+          <a href="assets/Osman-Isse-Cover-Letter.pdf" download class="btn-cv outline">Cover Letter</a>
+        </div>
+
+        <p class="social">
+          <a href="https://www.linkedin.com/in/osman-isse-9a1b3b1a2/" target="_blank">LinkedIn</a> |
+          <a href="https://www.facebook.com/osman.isse.7" target="_blank">Facebook</a> |
+          <a href="https://www.instagram.com/osmanisse/" target="_blank">Instagram</a>
+        </p>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section fade">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="full_name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" required />
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required>I'm ready to innovate as a front-end developer.</textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery" class="section fade">
+        <h2>Gallery</h2>
+        <div class="gallery">
+          <img src="https://cdn.pixabay.com/photo/2021/10/11/17/54/technology-6701504_1280.jpg" alt="Technology" />
+          <img src="https://miro.medium.com/v2/resize:fit:1600/format:webp/1*wbqrjrhv50aDq3kGNF3LRA.png" alt="Documentation" />
+          <img src="https://cdn.sketchbubble.com/pub/media/catalog/product/optimized1/1/e/1e98034a536ea4180039fb8b1becaea60a4591b5149cd4065ac6ef69b852350e/creativity-and-innovation-slide4.png" alt="Creativity" />
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <!-- Back to top -->
+  <button id="demoTopBtn" title="Back to top">↑</button>
+
+  <!-- Modal (HAL MAR OO KELIYA, dibadda cards-ka) -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2 id="modalTitle">Project Title</h2>
+      <p id="modalDescription">Project description goes here.</p>
+      <p><strong>Technologies:</strong> <span id="modalTech"></span></p>
+      <a href="#" target="_blank" id="modalLink" class="modal-link">View Project</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2026 Smart Innovation Tech. All rights reserved.</p>
+    <p>Smart Innovation Tech is a leading technology company specializing in innovative solutions.</p>
+  </footer>
+
+  <script src="script3.js"></script>
+</body>
+</html>
+
+
